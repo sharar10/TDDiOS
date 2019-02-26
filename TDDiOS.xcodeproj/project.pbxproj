@@ -12,8 +12,11 @@
 		58DC2A162224DC2F008DF52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DC2A142224DC2F008DF52D /* Main.storyboard */; };
 		58DC2A182224DC2F008DF52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DC2A172224DC2F008DF52D /* Assets.xcassets */; };
 		58DC2A1B2224DC2F008DF52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DC2A192224DC2F008DF52D /* LaunchScreen.storyboard */; };
-		58DC2A262224DC2F008DF52D /* TDDiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A252224DC2F008DF52D /* TDDiOSTests.swift */; };
 		58DC2A312224DC2F008DF52D /* TDDiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A302224DC2F008DF52D /* TDDiOSUITests.swift */; };
+		58DC2A3F2224DD1C008DF52D /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A3E2224DD1C008DF52D /* ToDoItemTests.swift */; };
+		58DC2A412224DD77008DF52D /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A402224DD77008DF52D /* ToDoItem.swift */; };
+		58DC2A442224DFA3008DF52D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A432224DFA3008DF52D /* Location.swift */; };
+		58DC2A462224E06B008DF52D /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DC2A452224E06B008DF52D /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +45,14 @@
 		58DC2A1A2224DC2F008DF52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58DC2A1C2224DC2F008DF52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DC2A212224DC2F008DF52D /* TDDiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58DC2A252224DC2F008DF52D /* TDDiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDiOSTests.swift; sourceTree = "<group>"; };
 		58DC2A272224DC2F008DF52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58DC2A2C2224DC2F008DF52D /* TDDiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DC2A302224DC2F008DF52D /* TDDiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDiOSUITests.swift; sourceTree = "<group>"; };
 		58DC2A322224DC2F008DF52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DC2A3E2224DD1C008DF52D /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		58DC2A402224DD77008DF52D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		58DC2A432224DFA3008DF52D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		58DC2A452224E06B008DF52D /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				58DC2A102224DC2F008DF52D /* AppDelegate.swift */,
+				58DC2A422224DF87008DF52D /* Model */,
 				58DC2A122224DC2F008DF52D /* ViewController.swift */,
 				58DC2A142224DC2F008DF52D /* Main.storyboard */,
 				58DC2A172224DC2F008DF52D /* Assets.xcassets */,
@@ -110,8 +117,9 @@
 		58DC2A242224DC2F008DF52D /* TDDiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				58DC2A252224DC2F008DF52D /* TDDiOSTests.swift */,
 				58DC2A272224DC2F008DF52D /* Info.plist */,
+				58DC2A3E2224DD1C008DF52D /* ToDoItemTests.swift */,
+				58DC2A452224E06B008DF52D /* LocationTests.swift */,
 			);
 			path = TDDiOSTests;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				58DC2A322224DC2F008DF52D /* Info.plist */,
 			);
 			path = TDDiOSUITests;
+			sourceTree = "<group>";
+		};
+		58DC2A422224DF87008DF52D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58DC2A402224DD77008DF52D /* ToDoItem.swift */,
+				58DC2A432224DFA3008DF52D /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +213,7 @@
 					};
 					58DC2A202224DC2F008DF52D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 58DC2A0C2224DC2F008DF52D;
 					};
 					58DC2A2B2224DC2F008DF52D = {
@@ -258,6 +276,8 @@
 			files = (
 				58DC2A132224DC2F008DF52D /* ViewController.swift in Sources */,
 				58DC2A112224DC2F008DF52D /* AppDelegate.swift in Sources */,
+				58DC2A442224DFA3008DF52D /* Location.swift in Sources */,
+				58DC2A412224DD77008DF52D /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DC2A262224DC2F008DF52D /* TDDiOSTests.swift in Sources */,
+				58DC2A462224E06B008DF52D /* LocationTests.swift in Sources */,
+				58DC2A3F2224DD1C008DF52D /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +490,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DZY9QYJG2F;
 				INFOPLIST_FILE = TDDiOSTests/Info.plist;
@@ -479,6 +501,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharar.TDDiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDiOS.app/TDDiOS";
@@ -490,6 +513,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DZY9QYJG2F;
 				INFOPLIST_FILE = TDDiOSTests/Info.plist;
