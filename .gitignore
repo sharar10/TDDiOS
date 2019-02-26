@@ -31,9 +31,6 @@ Temporary Items
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## Build generated
-Shoplandia/build/
-Shoplandia/DerivedData/
 
 ## Various settings
 *.pbxuser
@@ -58,23 +55,3 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
-### Carthage
-#Shoplandia/Carthage/Build
-
-### CocoaPods - don't ignore the lock file
-#Shoplandia/Pods/
-
-# Fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-Shoplandia/fastlane/report.xml
-Shoplandia/fastlane/Preview.html
-Shoplandia/fastlane/screenshots
-Shoplandia/fastlane/test_output
-
-
-#Shoplandia custom
-Shoplandia/buildtimes.log
