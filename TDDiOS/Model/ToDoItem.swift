@@ -20,5 +20,13 @@ struct ToDoItem {
         self.timestamp = timestamp
         self.location = location
     }
+}
 
+extension ToDoItem: Equatable {
+    static func == (lhs: ToDoItem, rhs: ToDoItem) -> Bool {
+        return lhs.title == rhs.title &&
+            lhs.itemDescription == lhs.itemDescription &&
+            lhs.location == rhs.location &&
+            lhs.timestamp == rhs.timestamp
+    }
 }
